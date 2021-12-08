@@ -1,0 +1,143 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<title> Billy Nguyen Portfolio Website </title> 
+	<!--- Main stylesheet --->
+	<link rel="stylesheet" href="style1.css">
+	<link href="aos.css">
+	<!--- Boxicons --->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!--- Script ---> 
+	<script href="main.js" rel="Javascript"> </script>
+	<script href="aos.js"> </script>
+	<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://unpkg.com/typed.js@~2.0.11"></script>
+	<script type="text/javascript" src="https://unpkg.com/scrollmonitor@~1.2.4"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="sidebar">
+		<div class="logo_content">
+			<div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+			<i class='bx bx-menu' id="btn"></i>
+		</div>
+			<ul class="menu">
+				<li><a href="#"></a>
+					<i class='bx bx-search' ></i>
+					<input type="text" placeholder="Search...">
+					<span class="tooltip">Search</span> 
+				</li>
+				
+				<li>
+					<a href="index1.html">
+						<i class='bx bx-home'></i>
+						<span class="links_name"> Home </span>
+					</a>
+					<span class="tooltip">Home</span> 
+				</li>
+				<li>
+					<a href="aboutme.html">
+						<i class='bx bx-user' ></i>
+						<span class="links_name"> About Me </span>
+					</a>
+					<span class="tooltip">About Me</span> 
+				</li>
+				<li><a href="skill.html">
+					<i class='bx bx-star' ></i>
+					<span class="links_name"> Skills </span>
+					</a>
+					<span class="tooltip">Skills</span> 
+				</li>
+				<li><a href="contact.html">
+					<i class='bx bx-phone' ></i>
+					<span class="links_name"> Contact </span>
+					</a>
+					<span class="tooltip">Contact</span> 
+				</li>
+			</ul>
+	</nav>
+	<section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>If you have any questions, kindly contact me through these methods</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">           
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>handsomebill007@yahoo.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>+358 46 549 9919</p>
+              </div>
+            </div>
+			<div class="social-links mt-3 text-center">
+          <a href="https://www.facebook.com/phuongnam.nguyenhoang.12" target=”_blank” class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/billy_nguyenzz/" target=”_blank” class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/hoang-phuong-nam-nguyen-87a56821a/" target=”_blank” class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="4" cols= "50" data-rule="required" data-msg="Please write something for us"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+	<script>
+	let btn = document.querySelector("#btn");
+	let sidebar = document.querySelector(".sidebar");
+	let searchBtn = document.querySelector(".bx-search");
+	
+	btn.onclick = function() {
+		sidebar.classList.toggle("active")
+		}
+	searchBtn.onclick = function() {
+		sidebar.classList.toggle("active")
+		}
+	</script>
+</body>
+</html>
